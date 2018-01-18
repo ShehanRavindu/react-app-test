@@ -11,7 +11,7 @@ class Button extends React.Component {
         };
 
         return (
-            <input type='button' value='Button' style={buttonStyle} />
+            <input type='button' value={this.props.name} style={buttonStyle} onClick={this.props.handler}/>
         );
     }
 }
